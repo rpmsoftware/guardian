@@ -1,0 +1,17 @@
+{
+  "name": "Guardian",
+  "version": "0.0.0",
+  "description": "Remote testing of reminder creation in RPM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Joaquín Windmüller",
+  "license": "",
+  "devDependencies": {},
+  "dependencies": {
+    "node-rest-client": "^1.4.4",
+    "promised-io": "^0.3.5",
+    "string": "^3.0.1"
+  }
+}
