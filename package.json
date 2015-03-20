@@ -2,6 +2,7 @@
   "name": "Guardian",
   "version": "0.0.0",
   "description": "Remote testing of reminder creation in RPM",
+  "repository": "git@github.com:rpmsoftware/guardian.git",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +11,10 @@
   "license": "",
   "devDependencies": {},
   "dependencies": {
+    "mandrill-api": "^1.0.41",
+    "marked": "^0.3.3",
     "moment": "^2.9.0",
+    "mustache": "^1.1.0",
     "node-rest-client": "^1.4.4",
     "promised-io": "^0.3.5",
     "string": "^3.0.1"

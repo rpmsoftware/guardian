@@ -1,8 +1,10 @@
 var configs = require('./config/config');
 var Guardian = require('./lib/guardian').Guardian;
 
-for (var i = configs.length - 1; i >= 0; i--) {
-    var config = configs[i];
-    var guardian = new Guardian(config);
+process.env['APP_NAME'] = configs.app.name;
+
+for (var i = configs.subscribers.length - 1; i >= 0; i--) {
+    var config = configs.subscribers[i];
+    var guardian = new Guardian(config, configs.mailer);
     guardian.runAllTests();
 };
