@@ -12,7 +12,14 @@ var configs = {
 	'mailer': {
 		'api_key': 'MANDRILL_API_KEY',
 		'from_email': 'guardian@example.com',
-		'from_name': 'Guardian'
+		'from_name': 'Guardian',
+		'to': [
+			{
+				'name': 'Lisa',
+				'email': 'lisa@example.com',
+				'type': 'to'
+			}
+		]
 	}
 };
 
