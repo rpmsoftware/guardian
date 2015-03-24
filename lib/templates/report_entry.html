@@ -1,6 +1,6 @@
-<div class="ReportEntry {{#isError}}is-error{{/isError}}">
-	<h2>Result: {{title}}</h2>
-	<div>
-		{{description}}
+<div class="ReportEntry{{#isError}} ReportEntry--error{{/isError}}">
+	<h2 class="ReportEntry--title">Result: {{title}}</h2>
+	<div class="ReportEntry--description">
+		{{&description}}
 	</div>
 </div>
