@@ -11,6 +11,7 @@
   "license": "",
   "devDependencies": {},
   "dependencies": {
+    "cron": "^1.0.9",
     "mandrill-api": "^1.0.41",
     "marked": "^0.3.3",
     "moment": "^2.9.0",
