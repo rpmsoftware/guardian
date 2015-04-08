@@ -1,3 +1,4 @@
+// On production, create an env variable "CG_CONFIG" with JSON value
 var configs = {
 	'app': {
 		'name': 'Guardian'
