@@ -4,7 +4,12 @@ var Guardian = require('./lib/guardian').Guardian;
 var CronJob = require('cron').CronJob;
 
 process.env['APP_NAME'] = configs.app.name;
+if (!useEnv) {
+    // Ignore SSL cert errors
+    process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+}
 if (process.env['USE_CRON'] === 'YES') {
+    console.log('Running as cron job');
     new CronJob({
         cronTime: '30 8 * * *',
         start: true,
@@ -12,6 +17,7 @@ if (process.env['USE_CRON'] === 'YES') {
         onTick: runTests
     });
 } else {
+    console.log('Running once');
     runTests();
 }
 
