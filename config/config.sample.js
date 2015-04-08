@@ -1,24 +1,24 @@
-// On production, create an env variable "CG_CONFIG" with JSON value
+// On production, create an env variable "CG_CONFIG" with JSON value of configs
 var configs = {
-	'app': {
-		'name': 'Guardian'
+	"app": {
+		"name": "Guardian"
 	},
-	'subscribers': [
+	"subscribers": [
 		{
-			'name': 'RPM Server Name',
-			'url' : 'https://...',
-			'key' : 'RPM_API_KEY'
+			"name": "RPM Server Name",
+			"url" : "https://...",
+			"key" : "RPM_API_KEY"
 		}
 	],
-	'mailer': {
-		'api_key': 'MANDRILL_API_KEY',
-		'from_email': 'guardian@example.com',
-		'from_name': 'Guardian',
-		'to': [
+	"mailer": {
+		"api_key": "MANDRILL_API_KEY",
+		"from_email": "guardian@example.com",
+		"from_name": "Guardian",
+		"to": [
 			{
-				'name': 'Lisa',
-				'email': 'lisa@example.com',
-				'type': 'to'
+				"name": "Lisa",
+				"email": "lisa@example.com",
+				"type": "to"
 			}
 		]
 	}
