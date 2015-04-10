@@ -22,6 +22,7 @@ if (process.env['USE_CRON'] === 'YES') {
 }
 
 function runTests() {
+    console.log('Running tests!');
     for (var i = configs.subscribers.length - 1; i >= 0; i--) {
         var config = configs.subscribers[i];
         var guardian = new Guardian(config, configs.mailer);
