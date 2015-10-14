@@ -21,11 +21,20 @@ if (process.env['USE_CRON'] === 'YES') {
     runTests();
 }
 
-function runTests() {
-    console.log('Running tests!');
-    for (var i = configs.subscribers.length - 1; i >= 0; i--) {
-        var config = configs.subscribers[i];
-        var guardian = new Guardian(config, configs.mailer);
-        guardian.runAllTests();
+function runTests(i) {
+    if (i === undefined) {
+        i = 0;
     }
+    if (i == configs.subscribers.length) {
+        return;
+    }
+    runTest(i).then(function() {
+        runTests(i+1);
+    });
+}
+
+function runTest(i) {
+    var config = configs.subscribers[i];
+    var guardian = new Guardian(config, configs.mailer);
+    return guardian.runAllTests();
 }
