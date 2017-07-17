@@ -31,6 +31,6 @@
   },
   "homepage": "https://github.com/rpmsoftware/guardian",
   "engines": {
-    "node": "0.10.x"
+    "node": "6.11.1"
   }
 }
