@@ -11,7 +11,7 @@ if (!useEnv) {
 if (process.env['USE_CRON'] === 'YES') {
     console.log('Running as cron job');
     new CronJob({
-        cronTime: '30 8 * * *',
+        cronTime: '0 8 * * *',
         start: true,
         timeZone: 'America/Edmonton',
         onTick: runTests
