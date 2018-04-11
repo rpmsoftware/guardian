@@ -1,10 +1,10 @@
 {
   "name": "CoastGuard",
   "version": "0.1.0",
-  "description": "Remote testing of reminder creation in RPM",
+  "description": "Coast Guard is the service that checks that RPM's pulse did it's work",
   "repository": {
     "type": "git",
-    "url": "git@github.com:rpmsoftware/guardian.git"
+    "url": "git@github.com:rpmsoftware/coast-guard.git"
   },
   "main": "index.js",
   "scripts": {
@@ -27,9 +27,9 @@
     "string": "^3.0.1"
   },
   "bugs": {
-    "url": "https://github.com/rpmsoftware/guardian/issues"
+    "url": "https://github.com/rpmsoftware/coast-guard/issues"
   },
-  "homepage": "https://github.com/rpmsoftware/guardian",
+  "homepage": "https://github.com/rpmsoftware/coast-guard",
   "engines": {
     "node": "6.11.1"
   }
