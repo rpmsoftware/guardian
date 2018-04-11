@@ -19,7 +19,7 @@
     "mandrill-api": "^1.0.41",
     "marked": "^0.3.3",
     "moment": "^2.9.0",
-    "mustache": "^1.1.0",
+    "mustache": "^1.2.0",
     "node-class": "^0.3.12",
     "node-rest-client": "^1.4.4",
     "node-serial": "^0.1.1",
