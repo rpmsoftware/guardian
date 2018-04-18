@@ -35,6 +35,6 @@ function runTests(i) {
 
 function runTest(i) {
     var config = configs.subscribers[i];
-    var cg = new CoastGuard(config, configs.mailer);
+    var cg = new CoastGuard(config, configs.mailer, {notification_email: configs.notification_email});
     return cg.runAllTests();
 }

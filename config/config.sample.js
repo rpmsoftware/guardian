@@ -21,7 +21,11 @@ var configs = {
 				"type": "to"
 			}
 		]
-	}
+	},
+    "notification_email": {
+        "address": "",
+        "password": ""
+    }
 };
 
 module.exports = configs;
