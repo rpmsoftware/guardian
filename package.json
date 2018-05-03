@@ -15,11 +15,12 @@
   "license": "ISC",
   "devDependencies": {},
   "dependencies": {
+    "@sendgrid/mail": "^6.2.1",
     "cron": "^1.0.9",
     "emailjs-imap-client": "^3.0.7",
+    "inline-css": "^2.4.0",
     "jsdom": "^11.8.0",
     "lodash": "^4.17.5",
-    "mandrill-api": "^1.0.41",
     "marked": "^0.3.3",
     "moment": "^2.9.0",
     "mustache": "^1.2.0",
