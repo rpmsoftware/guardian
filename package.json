@@ -16,7 +16,6 @@
   "devDependencies": {},
   "dependencies": {
     "@sendgrid/mail": "^6.2.1",
-    "cron": "^1.0.9",
     "emailjs-imap-client": "^3.0.7",
     "inline-css": "^2.4.0",
     "jsdom": "^11.8.0",
