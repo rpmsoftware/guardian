@@ -28,3 +28,7 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+
+config/gmail-token\.json
+
+config/gmail-credentials\.json

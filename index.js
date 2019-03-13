@@ -21,15 +21,13 @@ function runTests(i) {
     if (i == configs.subscribers.length) {
         return;
     }
-    var isLast = i === configs.subscribers.length - 1;
-    runTest(i, isLast).then(function() {
+    runTest(i).then(function() {
         runTests(i+1);
     });
 }
 
-function runTest(i, isLast) {
+function runTest(i) {
     var config = configs.subscribers[i];
-    config.isLast = isLast;
     var cg = new CoastGuard(config, configs.mailer, {notification_email: configs.notification_email});
     return cg.runAllTests();
 }
