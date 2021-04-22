@@ -38,6 +38,6 @@
   },
   "homepage": "https://github.com/rpmsoftware/coast-guard",
   "engines": {
-    "node": "8.11.1"
+    "node": "15.12.0"
   }
 }
