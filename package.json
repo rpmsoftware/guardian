@@ -17,7 +17,7 @@
   "dependencies": {
     "@sendgrid/mail": "^6.2.1",
     "emailjs-imap-client": "^3.0.7",
-    "googleapis": "^37.2.0",
+    "googleapis": "^39.1.0",
     "inline-css": "^2.4.0",
     "js-base64": "^2.5.1",
     "jsdom": "^11.8.0",
