@@ -23,7 +23,7 @@
     "jsdom": "^11.8.0",
     "lodash": "^4.17.13",
     "marked": "^0.3.3",
-    "moment": "^2.9.0",
+    "moment": "^2.29.4",
     "mustache": "^2.2.1",
     "node-class": "^0.3.12",
     "node-rest-client": "^1.4.4",
